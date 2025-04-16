@@ -25,8 +25,13 @@
         </ul>
         <div class="icons">
             <a href=""><i class="ri-search-line"></i></a>
-            <a href=""><i class="ri-user-line"></i></a>
-            <a href=""><i class="ri-shopping-cart-line"></i></a>
+            <div id="user-container" style="position: relative; display: inline-block; text-align: center;">
+                <a href="#" id="user-icon"><i class="ri-user-line"></i></a>
+                <div id="username-display" style="display: none; font-size: 12px; color: #333; margin-top: 2px;"></div>
+            </div>
+            <a href="./cart.html" id="cart-icon">
+                <i class="ri-shopping-cart-line"></i>
+              </a>
             <div class="bx bx-menu" id = "menu-icon"></div>
         </div>
         
@@ -67,47 +72,53 @@
         </div>
     </section>
 
-    <section class="contact">
-        <div class="main-contact">
-            <div class="contact-content">
-                <h5>Getting Started</h5>
-                <li><a href="#">Release Notes</a></li>
-                <li><a href="#">Upgrade Guide</a></li>
-                <li><a href="#">Browser Support</a></li>
-                <li><a href="#">Dark Mode</a></li>
-
+    <footer class="footer-container">
+        <div class="contact-social">
+            <div class="contact-info">
+                <p class="title">Contacts</p>
+                <div class="contact-item">
+                    <p>Phone:</p>
+                    <a href="tel:850-123-5021">850-123-5021</a>
+                </div>
+                <div class="contact-item">
+                    <p>Email:</p>
+                    <a href="mailto:info@lorem.mail">info@lorem.mail</a>
+                </div>
+                <div class="contact-item">
+                    <p>Address:</p>
+                    <a href="https://www.google.com/maps" target="_blank">312 Lovely Street, NY</a>
+                </div>
             </div>
 
-            <div class="contact-content">
-                <h5>Explore</h5>
-                <li><a href="#">Prototyping</a></li>
-                <li><a href="#">Design systems</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Security</a></li>
-
+            <div class="social">
+                <span class="title">Social</span>
+                <div class="social-icons">
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="images/home_images/youtube.png" alt="Youtube"> 
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="images/home_images/instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="images/home_images/facebook.png" alt="Facebook">
+                    </a>
+                </div>
+                <p>Empowering creators with quality microcontrollers and seamless shopping experience.</p>
             </div>
-
-            <div class="contact-content">
-                <h5>Resources</h5>
-                <li><a href="#">Best practices</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">Developers</a></li>
-                <li><a href="#">Learn design</a></li>
-
-            </div>
-
-            <div class="contact-content">
-                <h5>Community</h5>
-                <li><a href="#">Discustion Forums</a></li>
-                <li><a href="#">Code of conduct</a></li>
-                <li><a href="#">Contributing</a></li>
-                <li><a href="#">API reference</a></li>
-
-            </div>
-
         </div>
-      </section>
 
+        <div class="bottom-section">
+            <p>© Copyright 2020 Lorem Inc. All rights reserved.</p>
+            <ul>
+                <li><a href="#">F.A.Q</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <div id="cart-container"></div>
+    <script src="../New/js/login.js" ></script>
     <!-- Swiper.js -->
     <script src="js\swiper-bundle.min.js"></script>
     <!-- Custom script -->

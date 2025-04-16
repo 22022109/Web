@@ -28,8 +28,13 @@
         </ul>
         <div class="icons">
             <a href=""><i class="ri-search-line"></i></a>
-            <a href=""><i class="ri-user-line"></i></a>
-            <a href=""><i class="ri-shopping-cart-line"></i></a>
+            <div id="user-container" style="position: relative; display: inline-block; text-align: center;">
+                <a href="#" id="user-icon"><i class="ri-user-line"></i></a>
+                <div id="username-display" style="display: none; font-size: 12px; color: #333; margin-top: 2px;"></div>
+            </div>
+            <a href="./cart.html" id="cart-icon">
+                <i class="ri-shopping-cart-line"></i>
+              </a>
             <div class="bx bx-menu" id = "menu-icon"></div>
         </div>
         
@@ -331,6 +336,8 @@
         </div>
     </footer>
 
+    <div id="cart-container"></div>
+    <script src="../New/js/login.js" ></script>
     <!-- Swiper.js -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./js/swiper-bundle.min.js"></script>

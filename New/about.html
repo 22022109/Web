@@ -24,9 +24,14 @@
         </ul>
         <div class="icons">
             <a href=""><i class="ri-search-line"></i></a>
-            <a href=""><i class="ri-user-line"></i></a>
-            <a href=""><i class="ri-shopping-cart-line"></i></a>
-            <div class="bx bx-menu" id="menu-icon"></div>
+            <div id="user-container" style="position: relative; display: inline-block; text-align: center;">
+                <a href="#" id="user-icon"><i class="ri-user-line"></i></a>
+                <div id="username-display" style="display: none; font-size: 12px; color: #333; margin-top: 2px;"></div>
+            </div>
+            <a href="./cart.html" id="cart-icon">
+                <i class="ri-shopping-cart-line"></i>
+              </a>
+            <div class="bx bx-menu" id = "menu-icon"></div>
         </div>
     </header>
 
@@ -137,7 +142,7 @@
                         <img src="images/home_images/facebook.png" alt="Facebook">
                     </a>
                 </div>
-                <p>Bacon ipsum dolor amet short ribs pig sausage prosciutto chicken spare ribs salami.</p>
+                <p>Empowering creators with quality microcontrollers and seamless shopping experience.</p>
             </div>
         </div>
 
@@ -151,7 +156,9 @@
         </div>
     </footer>
     
-
+    <div id="auth-modal-container"></div>
+    <div id="cart-container"></div>
+    <script src="../New/js/login.js" ></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="../New/js/sripts.js"></script>
 </body>
